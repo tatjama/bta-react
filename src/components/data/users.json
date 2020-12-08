@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "firstName": "Admin",
+            "lastName": "Admin",
+            "email": "admin@admin.com",
+            "password": "AdminAdmin1",
+            "address": "Admin address",
+            "addressAlternative": "Admin address alternative",
+            "phone": "011111111",
+            "phoneAlternative": "111111111",
+            "status": 1
+        },
+        {
+            "firstName": "Tanja",
+            "lastName": "Admin",
+            "email": "tanja@admin.com",
+            "password": "TanjaTanja1",
+            "address": "Tanja address",
+            "addressAlternative": "Tanjaaddress alternative",
+            "phone": "011111112",
+            "phoneAlternative": "2111111111",
+            "status": 1
+        },
+        {
+            "firstName": "User",
+            "lastName": "User",
+            "email": "user@user.com",
+            "password": "UserUser1",
+            "address": "User address",
+            "addressAlternative": "User address alternative",
+            "phone": "011111114",
+            "phoneAlternative": "4111111111",
+            "status": 0
+        }
+    ]
+}
