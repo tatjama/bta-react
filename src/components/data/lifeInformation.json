@@ -1,0 +1,53 @@
+{
+    "lifeInformation":[
+        {
+           "id": "transport",
+            "informationTitle": "Local Transport",
+            "informationSubtitle": "General Information about Local Transport:",
+            "li1": "Train",
+            "li2": "Rent a car",
+            "li3": "BUS",
+            "li4": "Taxi",
+            "buttonId": "show-add-comment-transport"
+        },
+        {
+           "id": "food", 
+            "informationTitle": "Food & Entertainment",
+            "informationSubtitle": "General Information about Local Food & Entertainment:",
+            "li1": "Restaurants",
+            "li2": "Fast food",
+            "li3": "Cafe",
+            "li4": "Clubs",
+            "buttonId": "show-add-comment-food"
+        },
+        {
+           "id": "safety", 
+            "informationTitle": "Local safety",
+            "informationSubtitle": "General Information about Local Safety:",
+            "li1": "Regulations",
+            "li2": "Police",
+            "li3": "Hospitals",
+            "li4": "Hospitality",
+            "buttonId": "show-add-comment-safety"
+        },
+        {
+           "id": "culture", 
+            "informationTitle": "Local Culture",
+            "informationSubtitle": "General Information about Local Culture:",
+            "li1": "Museums",
+            "li2": "Opera",
+            "li3": "Music",
+            "li4": "Dance",
+            "buttonId": "show-add-comment-culture"
+        },
+        {
+           "id": "airport",
+            "informationTitle": "Airport",
+            "informationSubtitle": "General Information about Airport:",
+            "li1": "Airport1",
+            "li2": "Airport2",
+            "li3": "Transport from /to airport",
+            "buttonId": "show-add-comment-airport"
+        }
+    ]
+}
