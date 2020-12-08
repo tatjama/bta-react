@@ -1,0 +1,3 @@
+[0913/172022.369:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0913/172022.884:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1006/063957.040:ERROR:file_io.cc(135)] WriteFile: The pipe is being closed. (0xE8)
