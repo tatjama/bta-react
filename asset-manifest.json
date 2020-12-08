@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/business-travel-agency-react/static/css/main.5f361e03.chunk.css",
+    "main.js": "/business-travel-agency-react/static/js/main.898ea668.chunk.js",
+    "main.js.map": "/business-travel-agency-react/static/js/main.898ea668.chunk.js.map",
+    "runtime-main.js": "/business-travel-agency-react/static/js/runtime-main.ad5df4a5.js",
+    "runtime-main.js.map": "/business-travel-agency-react/static/js/runtime-main.ad5df4a5.js.map",
+    "static/js/2.e08e4d2a.chunk.js": "/business-travel-agency-react/static/js/2.e08e4d2a.chunk.js",
+    "static/js/2.e08e4d2a.chunk.js.map": "/business-travel-agency-react/static/js/2.e08e4d2a.chunk.js.map",
+    "index.html": "/business-travel-agency-react/index.html",
+    "precache-manifest.db6c294104fcb574374a9706485f02f6.js": "/business-travel-agency-react/precache-manifest.db6c294104fcb574374a9706485f02f6.js",
+    "service-worker.js": "/business-travel-agency-react/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/business-travel-agency-react/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.e08e4d2a.chunk.js.LICENSE.txt": "/business-travel-agency-react/static/js/2.e08e4d2a.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/business-travel-agency-react/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad5df4a5.js",
+    "static/js/2.e08e4d2a.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.898ea668.chunk.js"
+  ]
+}

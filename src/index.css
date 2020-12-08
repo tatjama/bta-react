@@ -1,0 +1,769 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+}
+.intro-page {
+    background-image: url("./images/suitcases.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: Spx;
+    text-align: center;
+    z-index: -10;               
+} 
+.intro-page-gradient{
+    padding-top: 20px;
+    background-color: hsla(0, 0%, 0%, 30%);
+    height: 100vh;
+    z-index: -5;
+}
+.error-message{
+    color: white;
+    font-size: 12px;
+    text-transform: initial;
+}
+.error-message-comment{
+    color: salmon;
+}
+.inputError{
+    color: red;
+}            
+
+           /*SIGN IN*/
+           .sign-form{
+               text-align: center;
+               position: fixed;
+              
+           }
+           #sign-in-form {              
+               width: 250px;
+               height: 260px;
+               left: 40%;
+               top: 30%;
+              
+           }            
+           .sign-form fieldset {
+               border: 0px solid gray;
+               border-radius: 10px;
+               color: white;                
+               font-size: 16px;
+               text-transform: uppercase;
+               transform: scale(1.2);
+           }
+           .sign-form legend{
+               text-transform: uppercase;
+               font-size: 16px;
+           }
+           .sign-form input {
+               width: 90%;
+               height: 30px;
+               margin: 5px;
+               padding: 0px;
+           }
+           .sign-form button{
+               padding: 5px;
+               width: 100px;
+               margin: 3px;
+               background-color: transparent;
+               font-weight: bold;
+               color: white;
+               text-transform: uppercase;
+           }                
+           .sign-form button:hover {
+               background-color: rgb(151, 170, 206);
+               color: black;
+               font-weight: bold;
+           }           
+
+           /*SIGN UP*/  
+           
+           #sign-up-form {
+               width: 550px;
+               height: 520px;               
+               left: 30%;
+               top: 30%;               
+           }
+           .sign-up-fieldset{
+               display: flex;
+               flex-direction: column;
+           }
+           #formMain {
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+           }            
+           #formLeft,
+           #formRight {
+               width: 200px;
+               margin: 5px;
+           }        
+           
+           /* NAVIGATION */
+         
+           .top-nav {
+            overflow: hidden;
+            background-color: black;
+            transition: transform .2s;
+        }    
+        .top-nav li {
+            color: white;
+            float: left;
+            display: block;       
+            text-align: center;
+            padding: 13px;
+            text-transform: uppercase;            
+        }    
+        .top-nav li:hover {
+            text-shadow: black 2px 2px 2px;
+            transform: scale(1.1);
+        }    
+        .active li {
+            background-color: slategray;
+            color: wheat;
+        }    
+        .top-nav .icon {
+            display: none;
+            text-align: center;
+        }
+              
+           /*-----------HEADER-----*/
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;   
+    padding: Spx;
+    text-align: center;
+    height: 250px;
+}  
+#message {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    right: 0%;
+    padding: 10px;
+}
+
+/*HOME*/
+
+#header-home {
+    background-image: url("./images/metropolis.png");
+    background-position: center;   
+    height: 100vh;
+    padding: 50px 0px;
+}
+
+/*LIFE - CITY*/
+        
+ #header-life {
+    background-image: url("./images/city_lights.png");
+    background-position-y:75%;    
+}
+.life-button {
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+    font-size: medium;
+    font-weight: lighter;
+}
+.info-restaurant {
+    font-weight: bold;
+    margin: 5px;
+}
+.provider-detail p{
+    margin: 15px;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(23, 88, 88, 40%);
+    border: 0px;
+    z-index: 5;
+    padding: 15px;
+}
+.top img{
+    width: 20px;
+    height: 20px;
+}
+.top:hover{
+    background-color: salmon;
+}
+/*-------ACCOMMODATION-----*/
+#header-accommodation {
+    background-image: url("./images/accomodation.png");
+    background-position-y: 80%;    
+}
+
+/*ENJOY*/
+
+#header-enjoy {
+    background-image: url("./images/enjoy.png");
+    background-position-y: 30%;   
+}
+
+/*FEEDBACK*/
+
+#header-feedback {
+    background-image: url("./images/Lets-Go-Travel.jpg");
+    background-position-y: 0%;  
+    background-position-x: -40%;  
+    }   
+#header-feedback label{
+    color: rgb(23, 88, 88);
+}    
+.loader{
+    text-align: center;
+}
+
+/*PROVIDERS*/
+
+#header-providers {
+    background-image: url("./images/providers.png");
+    background-position: center;
+}
+
+/*SELECT*/
+
+input, select, .select-provider {
+    padding: 10px;
+    margin: 5px;
+}
+select{
+    width: 200px;
+}
+input, .select-provider{
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    background-color: rgb(23, 88, 88);
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: slategray;
+}
+
+.choose-destination {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:transparent;
+    color: white;
+    width: 300px;
+    text-align: center;            
+    padding: 10px 50px;
+}  
+.choose-destination label{
+    font-size: small;
+} 
+.choose-destination button {
+    margin: 4px;
+    width: 100%;
+} 
+.choose-city button{
+    width: 200px;
+    margin: 5px;
+}
+
+#header-providers button,
+#header-feedback button{
+    width: 200px;
+    margin: 80px 0px;
+}
+
+/*WRAPPER*/      
+.wrapper {
+    padding: 20px;
+}
+h2 {
+    color: black;
+    padding: 4%;
+    font-size: medium;
+}
+
+/*SECTION-FIRST*/
+
+.section-first {
+        text-align: center;        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    figcaption{
+         color: slategray;
+    }
+    figcaption:hover{
+        color: darkcyan;
+    }
+    .section-first figure {
+        width: 150px;
+        padding: 10px;
+        margin: auto;
+        font-weight: bold;       
+    }
+    .section-first figure:hover {
+        transform: scale(1.2);
+    }    
+    .section-first figure img {
+        width: 130px;
+        height: 130px;
+        border: solid 1px white;
+        margin: 10px;
+        box-shadow: gray 0px 0px 10px;
+        transition: transform .2s;
+    } 
+ 
+#showTransportation,
+#user-comment {
+border: darkcyan solid 1px;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+
+.middle-wrapper {
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+.provider{
+    text-align: left;
+}
+.provider-div,
+.user-comment {
+border: darkcyan dashed 4px;
+padding: 40px;
+margin: 40px;
+}
+.user-comment form{
+    text-align: left;
+}
+
+/*DATA*/
+.main-header{
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.main-div{
+    border: darkcyan dashed 4px;
+    padding: 15px;
+    margin: 15px;
+}
+.data-selected{
+    text-align: center;
+    padding: 10px;
+}
+.data-selected h2{
+    padding: 10px;
+    color: rgb(23, 88, 88);
+}
+.data-selected div{
+    padding: 10px;
+}
+.data-info{
+    display: flex;
+    justify-content: space-around;  
+}
+.data-info p,
+.provider-heading p{
+    font-weight: bold;
+}
+.data-info div p{
+    padding: 2px;
+    font-size: medium;
+}
+
+.data-info p span,
+.provider-heading p span{
+    color: rgb(23, 88, 88);
+    font-weight: bold;
+}
+.data-left{
+    width: 350px;
+}
+.data-right{
+    width: 550px;
+    text-align: left;
+}
+.data-restaurant{
+    text-align: left;
+    width: 32%;
+}
+.data-first,
+.data-second,
+.data-third {
+    width: 350px;
+}
+textarea{
+    width: 100%;
+}
+.provider-heading,
+.provider-detail,
+.provider-detail-form {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 10px;
+}
+.provider-logo {
+    height: 50px;
+    }  
+
+.fa {
+font-size: 25px;
+}
+
+.checked {
+color: darkcyan;
+}
+
+
+.left,
+.right {
+width: 45%;
+padding: 5px;
+}
+
+.item{
+    width: 250px;
+    padding: 5px;
+}
+
+/*COMMENT */
+
+#leave-comment-form{
+    padding: 5px;
+}
+#leave-comment-form input,
+#leave-comment-form textarea{
+    margin: 0px;
+    padding: 3px;
+}
+.comment {
+    border: double 1px rgb(173, 169, 169);
+    background-color: ivory;
+    margin: 10px 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+.comment-button{
+    width: 150px;
+}
+.user-comment{
+    background-color: rgb(243, 247, 240);
+}
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.user{
+    padding: 8px;
+    width: 130px;
+}
+.text-comment {
+    width: 50%;
+    padding: 8px;
+}
+.text-comment h2 {
+    padding: 0px 0px 15px 0px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    width: 15px;
+}
+.range{
+    padding: 5px;
+}
+
+.fa {
+    font-size: 20px;
+}
+.checked {
+    color: darkcyan;
+}
+
+/*FORM TRANSPORTATION*/
+
+.destination{
+    text-align: right;
+}
+
+#nCity {
+    color: white;
+    font-weight: bold;
+}
+
+#transportationFromTo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#transportationFromTo div {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#transportationFromTo div input{
+    margin: 10px;
+     }      
+
+
+
+/*ADD FEEDBACK ABOUT TRANSPORTATION*/
+
+.message-range {
+    background-color: darkcyan;
+    color: white;
+    padding: 5px;
+}
+
+/*RESPONSIVE*/           
+
+@media screen and (max-width: 800px) {                
+               #sign-in-form,
+               #sign-up-form{
+                   left: -3%;
+                   top: 10%;
+                   width: 100%;
+                   height: 700px;
+                   padding: 30px 10px;
+               }
+               .sign-form input{
+                   width: 200px;
+                   font-size: 12px;
+                   padding: 3px;
+               }   
+               .top-nav li{
+                padding: 10px 9px;               
+                font-size: small;
+            }    
+/*PAGES*/ 
+.section-first figure {
+    width: 135px;
+    padding: 10px;       
+}
+.section-first figure:hover {
+    transform: scale(1.1);
+}    
+.section-first figure img {
+    width: 117px;
+    height: 117px;
+    margin: 8px;
+}
+
+            .top{
+                bottom: 5px;
+                right: 5px;
+            }
+           
+            .provider-logo {
+                height: 40px;
+                
+            }
+            .provider-div,
+           .user-comment {
+                border: darkcyan dashed 2px;
+                padding: 15px;
+                margin: 15px;
+            }
+            .comment{
+                flex-direction: column;
+                align-content: center;
+                padding: 10px;
+            }
+            .text-comment{
+                width: 100%;
+            }
+            /*DATA*/
+            .main-div {
+                padding: 5px;
+                margin: 5px;
+            }
+            .data-info div p{
+                font-size: small;
+            }
+            .data-selected div{
+                padding: 10px 5px;
+            }
+            .data-restaurant{
+                width: 100%;
+            }
+            p{
+                font-size: 10px;
+            }
+            h1{
+                font-size: medium;
+            }
+            h2{
+                font-size: small;
+            }
+            .heading{
+                font-size: x-small;
+            }      
+           }
+           
+@media screen and (max-width: 630px) {
+            .comment-button,
+               button{
+                   width: 100%;
+               }
+            #sign-up-form input{
+                width: 145px;
+                height: 30px;
+                font-size: 10px;
+            }
+               #sign-up-form input[type = "button"]{
+                   width: 185px;
+                   height: 27px;
+               }
+               .sign-up-fieldset{
+                   font-size: 10px;
+               }
+               #formLeft,
+               #formRight {
+                   width: 145px;
+                   margin: 5px;
+               } 
+               .top-nav li:not(:first-child) {
+                display: none;
+            }
+            .top-nav li.icon {
+                float: right;
+                display: block;
+            }
+            .top-nav.responsive {
+                position: relative;
+            }
+            .top-nav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .top-nav.responsive li {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+            /*PAGES*/
+            /*DATA*/
+            .data-info{
+                flex-direction: column;
+            }
+            .data-info div{
+                max-width: 100%;
+                padding: 10px;
+            }
+            .data-restaurant{
+                width: 100%;
+            }
+            .data-info div p {
+                font-size: small;
+            }
+            #showTransportation,
+    #user-comment {
+        border: darkcyan solid 1px;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+   .middle-wrapper {
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .provider-detail,
+    .provider-detail-form{
+        flex-direction: column;
+    }
+    .left,
+    .right {
+        width: 100%;
+        padding: 5px;
+}
+#transportationFromTo div{
+    width: 100%;
+     }      
+#transportationFromTo div select{
+    width: 80%;
+     }      
+#transportationFromTo div input{
+    margin: 10px;
+     }      
+           }
+           
+@media screen and (max-width: 500px){   
+            button, .comment-button {
+                width: 100%;
+            }    
+            .top{
+                width: 40px;
+                height: 40px;
+                bottom: 6px;
+                right: 6px;
+                padding: 12px;
+            }
+            .top img{
+                width: 16px;
+                height: 16px;
+            }
+                    
+            .item{
+                width: 100%;
+            }            
+            #transportationFromTo div select{
+                width: 70%;
+                 }
+            .provider-div,
+           .user-comment {
+                border: darkcyan dashed 2px;
+                padding: 5px;
+                margin: 5px;
+            }
+        } 
+
+/*FOOTER*/
+           
+           footer {
+               background-color: black;
+               color: white;
+               font-size: 14px;
+               font-weight: bold;
+               text-align: center;
+               padding: 1% 3%;
+           }  
+           .footer-credits {
+                color: gray;
+                font-size: 10px;
+           }
