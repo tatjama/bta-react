@@ -25,8 +25,8 @@ const SignIn = () => {
       setUserHasAuthenticated({
               isAuthenticated:true,
               logInUser: user,
-              rk:`${process.env.REACT_API_RAPIDAPI_API}`,
-              rkcc: `${process.env.REACT_API_RAPIDAPI_CITY_COUNTRY_API}`
+              rk:`${process.env.REACT_APP_RAPIDAPI_API}`,
+              rkcc: `${process.env.REACT_APP_RAPIDAPI_CITY_COUNTRY_API}`
             });        
       history.push("/");
      }else{
