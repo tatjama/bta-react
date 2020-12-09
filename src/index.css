@@ -112,7 +112,11 @@ html {
             overflow: hidden;
             background-color: rgb(23, 30, 43);
             transition: transform .2s;
-        }    
+            -webkit-transition: transform .2s;
+            -moz-transition: transform .2s;
+            -ms-transition: transform .2s;
+            -o-transition: transform .2s;
+}    
         .top-nav li {
             color: white;
             float: left;
@@ -354,9 +358,9 @@ figcaption:hover{
      
 
     .verticalPosition {
-        background-color: ivory;
+        background-color: rgba(255, 255, 255, 0.5);
         position: fixed;
-        left: 0px;
+        right: 0px;
         top: 30px;
         text-align: center;        
         display: flex;
