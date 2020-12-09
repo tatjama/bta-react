@@ -25,8 +25,8 @@ const SignIn = () => {
       setUserHasAuthenticated({
               isAuthenticated:true,
               logInUser: user,
-              rk:"3a41e73b67msh3835cf67055f37bp1fcf6ejsn149531416411",
-              rkcc: "e972fb1e60msh0d592a9ef4ed992p1e0e2bjsne8349b28c470"
+              rk:`${process.env.REACT_API_RAPIDAPI_API}`,
+              rkcc: `${process.env.REACT_API_RAPIDAPI_CITY_COUNTRY_API}`
             });        
       history.push("/");
      }else{
