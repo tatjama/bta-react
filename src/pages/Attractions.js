@@ -5,7 +5,6 @@ import CommentFromUsers from '../components/CommentFromUsers';
 import useFetchComments from '../hooks/useFetchComments';
 import LeaveCommentForm from '../components/LeaveCommentForm';
 import createCommentArray from '../components/utils/createCommentsArray';
-import {scroller} from 'react-scroll';
 import Loader from 'react-loader-spinner';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
@@ -35,14 +34,6 @@ const Attractions  = (props) =>{
     const closeCommentForm = () =>{
     setIsCommentForm(false)
     }
-    const  scrollToSection = (ident) => {
-        scroller.scrollTo(ident, {
-          duration: 800,
-          delay: 0,
-          smooth: "easeInOutQuart",
-        });
-      }; 
-    
     return(
         <div className = "attractions">
             <h1 className = "main-header">ATTRACTIONS </h1>
@@ -114,7 +105,6 @@ const Attractions  = (props) =>{
                                    </div>
                                 )
                             })}
-                            {scrollToSection(`${attraction.result_object.location_id}`)}
                             </div>
                             
                             }

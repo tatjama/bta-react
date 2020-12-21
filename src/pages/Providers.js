@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ProviderDetailForm from '../components/ProviderDetailForm';
-import {useAppContext} from '../libs/contextLib';
+//import {useAppContext} from '../libs/contextLib';
 import Button from '../components/Button';
 import appAvatar from '../images/travel-and-tourism.png'
 import ProviderInfo from '../components/ProviderInfo';
@@ -38,7 +38,7 @@ const Providers = ()=>{
     setProvidersInfoArray(newProvidersInfoArrayFromLocalStorage)
     }, [])
 
-    const { isUserAuthenticated} = useAppContext();      
+   // const { isUserAuthenticated} = useAppContext();      
 
     function showNewProviderForm() {
         (newProvider === false)? setNewProvider(true): setNewProvider(false)

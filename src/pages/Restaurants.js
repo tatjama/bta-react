@@ -5,7 +5,6 @@ import CommentFromUsers from '../components/CommentFromUsers';
 import useFetchComments from '../hooks/useFetchComments';
 import LeaveCommentForm from '../components/LeaveCommentForm';
 import createCommentArray from '../components/utils/createCommentsArray';
-import { scroller } from 'react-scroll';
 import Loader from 'react-loader-spinner';
 
 
@@ -38,15 +37,6 @@ const Restaurants = (props) => {
        const closeCommentForm = () =>{
        setIsCommentForm(false)
        }
-
-       const  scrollToSection = (ident) => {
-        scroller.scrollTo(ident, {
-          duration: 800,
-          delay: 0,
-          smooth: "easeInOutQuart",
-        });
-      };
-
 
  return(
         <div className = "restaurants">   
@@ -153,7 +143,6 @@ const Restaurants = (props) => {
                                    </div>
                                 )
                             })}   
-                            {scrollToSection(`${restaurant.location_id}`)}
                             </div>
                             }
                                 

@@ -12,7 +12,7 @@ import breakfast from '../images/breakfast.png';
 import hotel from '../images/hotel.png';
 import world from '../images/world.png';
 import airplane from '../images/airplane.png';
-import {scroller, scrollLeft, scrollTop} from 'react-scroll';
+import {scroller} from 'react-scroll';
 import arrowUp from '../images/arrow-up.svg';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from 'react-loader-spinner';
@@ -36,9 +36,18 @@ const City =({match}) =>{
     const scrollFunction = () => {
         (window.scrollY > 850)? setPosition("verticalPosition"): setPosition("horizontalPosition")        
     }
+
     useEffect(() => {
         window.onscroll = function() {scrollFunction()};
     }, [window.onscroll])
+
+    const  scrollToSection = (ident) => {
+        scroller.scrollTo(ident, {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+        });
+      };
 
     const fetchCityInformation = async() =>{
         setIsError(false)
@@ -197,13 +206,7 @@ const City =({match}) =>{
         go: "#airport"
     }]
 
-    const  scrollToSection = (ident) => {
-        scroller.scrollTo(ident, {
-          duration: 800,
-          delay: 0,
-          smooth: "easeInOutQuart",
-        });
-      };   
+       
     
     
     return(
