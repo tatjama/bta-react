@@ -2,6 +2,8 @@ import { cleanup } from '@testing-library/react';
 import {useState, useEffect} from 'react';
 import {countriesArray} from '../components/data/countries.json';
 import {useAppContext} from '../libs/contextLib';
+//api url
+import { countryURL, cityURL } from '../api';
 
 const countries = countriesArray;
 
@@ -25,9 +27,7 @@ const useSelect = (callback) =>{
         setIsError(false)  
         setIsLoading(true) 
        try {
-        const data  = await fetch(`https://countries-cities.p.rapidapi.com/location/country/${id}
-        /city/list?page=1&per_page=100&format=json&population=100001`
-        , {
+        const data  = await fetch(`${countryURL()}${id}${cityURL()}` , {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "countries-cities.p.rapidapi.com",

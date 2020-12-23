@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useAppContext} from '../libs/contextLib';
+import { commentsURL } from '../api';
 
 const useFetchComments = (callback) => {
     const { isUserAuthenticated} = useAppContext(); 
@@ -13,8 +14,7 @@ const useFetchComments = (callback) => {
          setIsLoading(true)
          try {             
          const data = await
-         fetch(`https://tripadvisor1.p.rapidapi.com/reviews/list?limit=20&currency=USD&
-         lang=en_US&location_id=${id}`, {
+         fetch(`${commentsURL()}${id}`, {
              "method": "GET",
              "headers": {
                  "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
