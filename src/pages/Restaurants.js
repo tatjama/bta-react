@@ -46,8 +46,7 @@ const Restaurants = (props) => {
                     return(
                         <div key = {restaurant.location_id} className = "data-selected">                             
                             <h1>{restaurant.name}</h1>
-                            <h2>Rating: {restaurant.rating}</h2>
-                            <div >
+                            <h2>Rating: {restaurant.rating}</h2>                            
                                 <div className = "data-info">
                                     <div className = "data-left">
                                     {restaurant.photo.images.small.url?
@@ -69,8 +68,7 @@ const Restaurants = (props) => {
                                         <p><span>{restaurant.description}</span></p> 
                                         : <p><span>Description is not available</span></p>           
                                         }
-                                    </div>
-                                    
+                                    </div>                                    
                                     <hr style={{"border":"3px solid #f1f1f1 "}}/> 
                                 </div>
                                 <div className = "data-info">
@@ -101,7 +99,7 @@ const Restaurants = (props) => {
 
                                     </div>
                                 </div>                               
-                            </div>              
+                                       
                             <div>
                             <Button 
                                 id = {restaurant.location_id}
@@ -155,5 +153,6 @@ const Restaurants = (props) => {
              </div>
     )
 }
+
 
 export default Restaurants;
