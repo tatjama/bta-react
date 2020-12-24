@@ -31,6 +31,7 @@ const Providers = ()=>{
     useEffect(() => {       
     if(providersInfoArrayFromLocalStorage.length === 0){
         localStorage.setItem('providersArr', JSON.stringify(providersInfoArray))
+        //eslint-disable-next-line
         newProvidersInfoArrayFromLocalStorage = JSON.parse(localStorage.getItem('providersArr'))
     } else{
         newProvidersInfoArrayFromLocalStorage = JSON.parse(localStorage.getItem('providersArr'))

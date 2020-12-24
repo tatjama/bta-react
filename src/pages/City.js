@@ -41,7 +41,7 @@ const City =({match}) =>{
 
     useEffect(() => {
         window.onscroll = function() {scrollFunction()};
-    }, [window.onscroll])
+    }, [])
 
     const  scrollToSection = (ident) => {
         scroller.scrollTo(ident, {

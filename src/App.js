@@ -19,10 +19,10 @@ const App = ()=>{
 }
 
 useEffect(() => {     
-    onLoad();    
+    onLoadApp();    
 }, [])
 
-async function onLoad() {
+async function onLoadApp() {
     try {
         await 
         console.log('Is user in session?');

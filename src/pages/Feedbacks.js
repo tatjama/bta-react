@@ -19,6 +19,7 @@ const Feedbacks = ()=>{
     useEffect(() => {       
     if(providersInfoArrayFromLocalStorage.length === 0){
         localStorage.setItem('providersArr', JSON.stringify(providersInfoArray))
+        //eslint-disable-next-line
         newProvidersInfoArrayFromLocalStorage = JSON.parse(localStorage.getItem('providersArr'))
     } else{
         newProvidersInfoArrayFromLocalStorage = JSON.parse(localStorage.getItem('providersArr'))
@@ -39,7 +40,7 @@ const Feedbacks = ()=>{
             setCommentsArray(myCommentsArray)
         }
         
-    }, [])
+    }, [isUserAuthenticated.logInUser.firstName])
 
     const  scrollToSection = (ident) => {
         scroller.scrollTo(ident, {
