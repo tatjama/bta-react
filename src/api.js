@@ -8,6 +8,7 @@ const get_restaurants = 'restaurants/list?restaurant_tagcategory_standalone=1059
 const get_airports = 'airports/search?locale=en_US&query=';
 const get_country = 'location/country/';
 
+export const base_host = 'tripadvisor1.p.rapidapi.com/';
 export const commentsURL = () => `${base_url}${get_comments}`;
 export const locationURL = () => `${base_url}${get_location}`;
 export const restaurantsURL = () => `${base_url}${get_restaurants}`;

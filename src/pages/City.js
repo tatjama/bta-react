@@ -17,7 +17,7 @@ import arrowUp from '../images/arrow-up.svg';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from 'react-loader-spinner';
 //api url:
-import { locationURL, restaurantsURL, airportsURL } from '../api';
+import { base_host, locationURL, restaurantsURL, airportsURL } from '../api';
 
 const City =({match}) =>{   
     const [header, setHeader] = useState([])  
@@ -65,7 +65,7 @@ const City =({match}) =>{
                fetch(`${locationURL()}${match.params.id}`, {
                    "method": "GET",
                    "headers": {
-                       "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+                       "x-rapidapi-host": base_host,
                        "x-rapidapi-key": isUserAuthenticated.rk
                    }
                })
@@ -102,7 +102,7 @@ const City =({match}) =>{
         fetch(`${restaurantsURL()}${header.location_id}`, {
 	        "method": "GET",
 	        "headers": {
-		        "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+		        "x-rapidapi-host": base_host,
 		        "x-rapidapi-key": isUserAuthenticated.rk
 	        }
         })
@@ -157,7 +157,7 @@ const City =({match}) =>{
         await fetch(`${airportsURL()}${header.name}`, {
           "method": "GET",
           "headers": {
-              "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+              "x-rapidapi-host": base_host,
               "x-rapidapi-key": isUserAuthenticated.rk
           }
       })

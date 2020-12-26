@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useAppContext} from '../libs/contextLib';
-import { commentsURL } from '../api';
+import { base_host, commentsURL } from '../api';
 
 const useFetchComments = (callback) => {
     const { isUserAuthenticated} = useAppContext(); 
@@ -17,7 +17,7 @@ const useFetchComments = (callback) => {
          fetch(`${commentsURL()}${id}`, {
              "method": "GET",
              "headers": {
-                 "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+                 "x-rapidapi-host": base_host,
                  "x-rapidapi-key": isUserAuthenticated.rk
          }
      })
