@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import {countriesArray} from '../components/data/countries.json';
 import {useAppContext} from '../libs/contextLib';
 //api url
-import { countryURL, cityURL } from '../api';
+import { cityURL } from '../api';
 
 const countries = countriesArray;
 
@@ -27,7 +27,7 @@ const useSelect = (callback) =>{
         setIsError(false)  
         setIsLoading(true) 
        try {
-        const data  = await fetch(`${countryURL()}${id}${cityURL()}` , {
+        const data  = await fetch(`${cityURL(id)}` , {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "countries-cities.p.rapidapi.com",

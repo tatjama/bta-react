@@ -13,5 +13,4 @@ export const commentsURL = () => `${base_url}${get_comments}`;
 export const locationURL = () => `${base_url}${get_location}`;
 export const restaurantsURL = () => `${base_url}${get_restaurants}`;
 export const airportsURL = () => `${base_url}${get_airports}`;
-export const countryURL = () => `${base_country_url}${get_country}`;
-export const cityURL = () => '/city/list?page=1&per_page=100&format=json&population=100001'
+export const cityURL = (city_id) => `${base_country_url}${get_country}${city_id}/city/list?page=1&per_page=100&format=json&population=100001`
