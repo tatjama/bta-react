@@ -1,9 +1,6 @@
 import React from 'react';
 
-
-
 const Rating = (props) => {
-
     const getStars = () => {
         const stars = [];
         const rating = Math.round(props.rate);
@@ -13,7 +10,6 @@ const Rating = (props) => {
             }else{
                 stars.push(<span  key = {i} className="fa fa-star "></span>)
             }
-
         }
         return stars
     }
