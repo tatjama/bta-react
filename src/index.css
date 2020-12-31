@@ -576,8 +576,13 @@ input[type="checkbox"],
 input[type="radio"] {
     width: 15px;
 }
+.comment-range{
+    padding: 15px;
+}
 .range{
     padding: 5px;
+    display: flex;
+    flex-direction:row;
 }
 
 .fa {

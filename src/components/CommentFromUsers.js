@@ -33,7 +33,7 @@ const CommentFromUsers = (props) =>{
             <br/>
             <p>Published: <span>{props.comment.published_date}</span></p>
         </div>
-        <div className="range">
+        <div className = "comment-range">
             <div>
                 <span className="heading">User Rating: {props.comment.rating} </span>
                 <Rating rate = {parseInt(props.comment.rating)}/>               

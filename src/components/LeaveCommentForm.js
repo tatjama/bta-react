@@ -4,6 +4,7 @@ import userAvatar from '../images/avatar-dragan.png';
 import tAdminAvatar from '../images/avatar-jelena.png';
 import appAvatar from '../images/travel-and-tourism.png';
 import Rating from './Rating';
+import Range from './Range';
 import validateCommentForm from '../components/utils/validateCommentForm';
 import useForm from '../hooks/useForm';
 import { useAppContext } from '../libs/contextLib';
@@ -129,72 +130,7 @@ const LeaveCommentForm = (props) =>{
                 {errors.text && <p className = "error-message-comment">{errors.text}</p>}
                 <br/>
                 <p className = "message-range">Click for range</p>
-                <div>
-                    <div className = "range">
-                        <label>5 star</label> 
-                        <input 
-                            type="radio" 
-                            name="rating" 
-                            value="5"                                                
-                            onChange = {handleChange}
-                            className = {`${errors.rating && "inputError"}`}
-                        />
-                        <span className="fa fa-star checked" checked></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>                                       
-                    </div>
-                    <div className="range">
-                        <label>4 star </label>
-                        <input 
-                            type="radio" 
-                            name="rating" 
-                            value="4"                                                
-                            onChange = {handleChange}
-                        />
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>                                        
-                    </div>
-                    <div className="range">
-                        <label>3 star </label>
-                        <input 
-                            type="radio" 
-                            name="rating" 
-                            value="3"                                                
-                            onChange = {handleChange}
-                            className = {`${errors.rating && "inputError"}`}
-                        />
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>                                            
-                    </div>
-                    <div className = "range">
-                        <label>2 star</label>                   
-                        <input 
-                            type="radio" 
-                            name="rating" 
-                            value="2"                                                
-                            onChange = {handleChange}
-                            className = {`${errors.rating && "inputError"}`}
-                        />
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>                                     
-                    </div>
-                    <div className = "range">
-                        <label>1 star</label>                   
-                        <input 
-                            type="radio" 
-                            name="rating" 
-                            value="1"
-                            onChange = {handleChange}
-                            className = {`${errors.rating && "inputError"}`}
-                        />
-                        <span className="fa fa-star checked"></span>    
-                    </div>                 
-        </div>
+                <Range handleChange = {handleChange} errors = {errors}/>
         {errors.rating && <p className = "error-message-comment">{errors.rating}</p>}
                 <br/>
                 <button className = "comment-button" type="submit">Submit</button>
