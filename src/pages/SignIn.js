@@ -40,15 +40,15 @@ const SignIn = () => {
     return(
     <div className = "intro-page">        
       <div className="intro-page-gradient">           
-        <form className="sign-form" id="sign-in-form" onSubmit = {handleSubmit}  noValidate >
-          <fieldset>
-            <legend>Sign in</legend>
+        <form className="sign-form sign-form_in" onSubmit = {handleSubmit}  noValidate >
+          <fieldset className="sign-form__fieldset">
+            <legend className="sign-form__legend">Sign in</legend>
             <br/>
             <span className="error-sign-in"  title="Error. E-mail format something@something.com"></span>
             <input 
                 type="email"                 
                 name = "email"
-                className={`${errors.email && "inputError"}`}
+                className = {`sign-form__input ${errors.email && "sign-form__input_error"}`}
                 placeholder = " E-mail "
                 id="sign-in-e-mail" 
                 value = {values.email}
@@ -57,23 +57,23 @@ const SignIn = () => {
                 required = {true}                
             />
             <br/>
-             {errors.email && <p className="error-message">{errors.email}</p>}
+             {errors.email && <p className="sign-form__message_error">{errors.email}</p>}
             <span className="error-sign-in"  title="Error. Password format only recive letters and numbers"></span>
             <input 
                 type="password"                 
                 name="password"
-                className={`${errors.password && "inputError"}` }
+                className={`sign-form__input ${errors.password && "sign-form__input_error"}` }
                 placeholder = " Password "
                 id="sign-in-password"
                 value = {values.password}
                 onChange = {handleChange} 
                 required = {true}                
             />
-            {errors.password && <p className = "error-message">{errors.password}</p>}
+            {errors.password && <p className = "sign-form__message_error">{errors.password}</p>}
             <br/>
             <br/>            
-            <button type="submit" >Sign in </button>
-            <button type="reset" onClick = {handleReset}>Clear</button>
+            <button className = "sign-form__button" type="submit" >Sign in </button>
+            <button className = "sign-form__button" type="reset" onClick = {handleReset}>Clear</button>
         </fieldset>
       </form>      
     </div>
