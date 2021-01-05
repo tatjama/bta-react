@@ -6,7 +6,7 @@ const Home = () =>{
   const { isUserAuthenticated} = useAppContext();  
  
     return(
-      <header className="header" id="header-home">
+      <header className="header header_home">
                   <div id="message">
                     Welcome {" " +isUserAuthenticated.logInUser.firstName + " " + isUserAuthenticated.logInUser.lastName}
                   </div>

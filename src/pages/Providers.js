@@ -55,9 +55,10 @@ const Providers = ()=>{
      
     return(
         <div className="page-providers">
-            <header className="header" id="header-providers" >
+            <header className="header header_providers" >
             <div id="message" style={{"color": "rgb(52, 87, 128)"}}></div>
             <Button
+                className = "header__button_providers"
                 name = "New Provider Form"
                 handleOnClick = {showNewProviderForm}
             />

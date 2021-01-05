@@ -52,11 +52,12 @@ const Feedbacks = ()=>{
 
     return(
         <div className="page-feedback">
-            <header className="header" id="header-feedback">
+            <header className="header header_feedback">
                 <div id="message" style={{"color": "rgb(29, 150, 187)"}}>
                     Add comment {isUserAuthenticated.logInUser.firstName + " " + isUserAuthenticated.logInUser.lastName}                   
                 </div>
                 <Button
+                    className = "header__button_feedback"
                     name = "My comments"
                 handleOnClick = {showMyComments}
             />

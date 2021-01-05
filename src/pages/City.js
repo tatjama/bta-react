@@ -210,12 +210,12 @@ const City =({match}) =>{
     
     return(
         <div>     
-             <header className="header" id="header-life" >
+             <header className="header header_life" >
                 <div id="message"></div>        
                  <SelectForm />          
             </header>
                 <Button
-                    className = "life-button"
+                    className = "header__button_life"
                     name = {`Show information about ${match.params.id}`} 
                     handleOnClick = {fetchCityInformation}
                 />
