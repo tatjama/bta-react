@@ -54,21 +54,21 @@ async function onLoadApp() {
                 <ul> {  
                     isUserAuthenticated
                         ? <>
-                        <li onClick = {handleSignOut}>Sign Out</li>
-                    <NavLink to="/" exact activeClassName="active"><li>Home</li></NavLink>
-                    <NavLink to="/life" activeClassName="active"><li>Life ...</li></NavLink>
+                        <li className="top-nav__li" onClick = {handleSignOut}>Sign Out</li>
+                    <NavLink to="/" exact activeClassName="active"><li className="top-nav__li">Home</li></NavLink>
+                    <NavLink to="/life" activeClassName="active"><li className="top-nav__li">Life ...</li></NavLink>
                     {/*<NavLink to="/enjoy" activeClassName="active"><li >Enjoy</li></NavLink>*/}
                     {
                         (isUserAuthenticated.logInUser.status === 0)
-                        && <NavLink to="/feedbacks" activeClassName="active"><li >Feedbacks</li> </NavLink>
+                        && <NavLink to="/feedbacks" activeClassName="active"><li className="top-nav__li">Feedbacks</li> </NavLink>
 }                    {
                         (isUserAuthenticated.logInUser.status === 1) 
-                        && <NavLink to="/providers" activeClassName="active"><li id="providers" to="/providers">Providers</li></NavLink>
+                        && <NavLink to="/providers" activeClassName="active"><li className="top-nav__li" id="providers" to="/providers">Providers</li></NavLink>
                     }
                         </>
                         : <>
-                        <NavLink to="/signin" activeClassName="active-sign"><li>Sign in</li></NavLink>
-                        <NavLink to="/signup" activeClassName="active-sign"><li>Sign Up</li></NavLink>                        
+                        <NavLink to="/signin" activeClassName="active-sign"><li className="top-nav__li">Sign in</li></NavLink>
+                        <NavLink to="/signup" activeClassName="active-sign"><li className="top-nav__li">Sign Up</li></NavLink>                        
                         </>
                     }
                                     
