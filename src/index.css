@@ -210,20 +210,16 @@ html {
 .top:hover{
     background-color: salmon;
 }
-
-  
-
 .loader{
     text-align: center;
 }
-
 .provider-detail p{
     margin: 15px;
 }
 
    /*SELECT*/
 
-   input, select, .select-provider {
+input, select, .select-provider {
     padding: 10px;
     margin: 5px;
 }
@@ -242,13 +238,11 @@ button {
     width: 130px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: ivory;
     color: lightcoral;
 }
-
-.choose-destination {
+.select-form {
     margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
@@ -258,18 +252,14 @@ button:hover {
     text-align: center;            
     padding: 10px 50px;
 }  
-.choose-destination label{
+.select-form__label{
     font-size: small;
 } 
-.choose-destination button {
+.select-form__button {
     margin: 4px;
     width: 100%;
 } 
-.choose-city button{
-    width: 200px;
-    margin: 5px;
-}
-.error-pop-up{
+.select-form__pop-up_error{
     color: red;
     background-color: ivory;
     border-radius: 10px;
@@ -281,9 +271,6 @@ button:hover {
     text-align: left;
     position: relative;
 }
-
-
-
     /*WRAPPER*/      
     .wrapper {
         padding: 20px;
@@ -293,19 +280,14 @@ button:hover {
         padding: 4%;
         font-size: medium;
     }
-
 /*SECTION FIRST*/
-
 figcaption{
     color: slategray;
 }
 figcaption:hover{
    color: darkcyan;
 }
-
     /*horizontalPosition*/ 
-     
-
     .horizontalPosition {
         text-align: center;        
         display: flex;
@@ -313,7 +295,6 @@ figcaption:hover{
         flex-wrap: wrap;
         justify-content: space-evenly;
     }    
-    
     .horizontalPosition figure {
         width: 150px;
         padding: 10px;
@@ -322,7 +303,11 @@ figcaption:hover{
     }
     .horizontalPosition figure:hover {
         transform: scale(1.2);
-    }    
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+}    
     .horizontalPosition figure img {
         width: 130px;
         height: 130px;
@@ -330,10 +315,12 @@ figcaption:hover{
         margin: 10px;
         box-shadow: gray 0px 0px 10px;
         transition: transform .2s;
-    } 
+        -webkit-transition: transform .2s;
+        -moz-transition: transform .2s;
+        -ms-transition: transform .2s;
+        -o-transition: transform .2s;
+} 
     /*verticalPosition*/ 
-     
-
     .verticalPosition {
         background-color: rgba(255, 255, 255, 0.5);
         position: fixed;
@@ -345,8 +332,7 @@ figcaption:hover{
         flex-wrap: nowrap;
         justify-content: space-evenly;
         padding: 1px;
-    }    
-    
+    }       
     .verticalPosition figure {
         width: 65px;
         padding: 7px;
@@ -366,8 +352,7 @@ figcaption:hover{
         transition: transform .2s;
     } 
   
-#showTransportation,
-#user-comment { 
+#showTransportation{ 
     border: darkcyan solid 1px; 
     border-radius: 10px; 
     margin: 10px; 
@@ -590,6 +575,20 @@ input[type="radio"] {
     color: white;
     padding: 5px;
 }
+ /*FOOTER*/           
+footer {
+    background-color: rgb(23, 30, 43);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1% 3%;
+}  
+.footer-credits {
+    color: gray;
+    font-size: 10px;
+}
+
 
 /*RESPONSIVE*/ 
 
@@ -610,6 +609,7 @@ input[type="radio"] {
 .error-message{
     font-size: 10px;
 }
+/*Nav*/
 .top-nav__li{
     padding: 10px 9px;               
     font-size: small;
@@ -752,8 +752,7 @@ input[type="radio"] {
 .leave-comment-user p{
     font-size: 8px;
 }
-#showTransportation,
-    #user-comment {
+#showTransportation{
         border: darkcyan solid 1px;
         border-radius: 10px;
         margin: 5px;
@@ -797,18 +796,4 @@ input[type="radio"] {
                       padding: 5px;
                       margin: 5px;
                   }
-        }  
-           /*FOOTER*/
-           
-           footer {
-               background-color: rgb(23, 30, 43);
-               color: white;
-               font-size: 14px;
-               font-weight: bold;
-               text-align: center;
-               padding: 1% 3%;
-           }  
-           .footer-credits {
-                color: gray;
-                font-size: 10px;
-           }
+}  

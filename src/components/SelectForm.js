@@ -17,8 +17,8 @@ const SelectForm = () =>{
 
     
     return(
-        <form className="choose-destination" onSubmit = {handleSubmit}>    
-        <label htmlFor="countries"> Choose a country</label>             
+        <form className="select-form" onSubmit = {handleSubmit}>    
+        <label className="select-form__label" htmlFor="countries"> Choose a country</label>             
                 <Select 
                    handleChange = {handleSelectCountry}
                    optionArray = {countries}
@@ -38,8 +38,8 @@ const SelectForm = () =>{
                 />
                 }
                 <br/>
-                <button type="submit" className="choose-destination-button" >Select</button>
-                { isCities && <p className = "error-pop-up">
+                <button type="submit" className="select-form__button" >Select</button>
+                { isCities && <p className = "select-form__pop-up_error">
                     {country.name} doesn't have a city over 100,000 citizens.
                     <br/> Please select another country
                 </p>}
