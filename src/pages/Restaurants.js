@@ -46,9 +46,9 @@ const Restaurants = (props) => {
                     return(
                         <div key = {restaurant.location_id} className = "data-selected">                             
                             <h1>{restaurant.name}</h1>
-                            <h2>Rating: {restaurant.rating}</h2>                            
-                                <div className = "data-info">
-                                    <div className = "data-left">
+                            <h2 className="data-selected__h2">Rating: {restaurant.rating}</h2>                            
+                                <div className = "data-selected__data-info">
+                                    <div className = "data-selected_left">
                                     {restaurant.photo.images.small.url?
                                         <img 
                                             src = {restaurant.photo.images.small.url} 
@@ -62,40 +62,40 @@ const Restaurants = (props) => {
                                         />
                                     }
                                     </div>
-                                    <div className = "data-right">
+                                    <div className = "data-selected_right">
                                         <h3>DESCRIPTION</h3>
                                         {restaurant.description?
-                                        <p><span>{restaurant.description}</span></p> 
-                                        : <p><span>Description is not available</span></p>           
+                                        <p className = "data-selected__p"><span className = "data-selected__span">{restaurant.description}</span></p> 
+                                        : <p className = "data-selected__p"><span className = "data-selected__span">Description is not available</span></p>           
                                         }
                                     </div>                                    
                                     <hr style={{"border":"3px solid #f1f1f1 "}}/> 
                                 </div>
-                                <div className = "data-info">
-                                    <div className = "data-restaurant">
+                                <div className = "data-selected__data-info">
+                                    <div className = "data-selected__data-restaurant">
                                         <h3>CONTACT</h3>
-                                            <p>Name: <span>{restaurant.name}</span></p>
-                                            <p>Address: <span>{restaurant.address}</span></p>
-                                            <p>Phone: <span>{restaurant.phone}</span></p>
-                                            <p>Email: <span>{restaurant.email}</span></p>
-                                            <p>Website: <span>{restaurant.website}</span></p>
+                                            <p className = "data-selected__p">Name: <span className = "data-selected__span">{restaurant.name}</span></p>
+                                            <p className = "data-selected__p">Address: <span className = "data-selected__span">{restaurant.address}</span></p>
+                                            <p className = "data-selected__p">Phone: <span className = "data-selected__span">{restaurant.phone}</span></p>
+                                            <p className = "data-selected__p">Email: <span className = "data-selected__span">{restaurant.email}</span></p>
+                                            <p className = "data-selected__p">Website: <span className = "data-selected__span">{restaurant.website}</span></p>
                                             
                                             
                                     </div>
-                                    <div className = "data-restaurant"> 
+                                    <div className = "data-selected__data-restaurant"> 
                                         <h3>INFO</h3>                                                   
-                                            <p>Type: <span>Restaurant</span></p>   
-                                            <p>LONGITUDE: <span>{restaurant.longitude}</span></p>
-                                            <p>LATITUDE: <span>{restaurant.latitude}</span></p>
-                                            <p>ID: <span>{restaurant.location_id}</span></p>
+                                            <p className = "data-selected__p">Type: <span className = "data-selected__span">Restaurant</span></p>   
+                                            <p className = "data-selected__p">LONGITUDE: <span className = "data-selected__span">{restaurant.longitude}</span></p>
+                                            <p className = "data-selected__p">LATITUDE: <span className = "data-selected__span">{restaurant.latitude}</span></p>
+                                            <p className = "data-selected__p">ID: <span className = "data-selected__span">{restaurant.location_id}</span></p>
                                     </div>
-                                    <div className = "data-restaurant">
+                                    <div className = "data-selected__data-restaurant">
                                         <h3>RATING</h3>
-                                        <p>Rating: <span>{restaurant.rating}</span></p>
-                                        <p>Ranking: <span>{restaurant.ranking}</span></p>                                                                   
-                                        <p>Category: <span>{restaurant.ranking_category}</span></p>
-                                        <p>Ranking position: <span>{restaurant.ranking_position}</span></p>                                           
-                                        <p>Price: <span>{restaurant.price}</span></p>    
+                                        <p className = "data-selected__p">Rating: <span className = "data-selected__span">{restaurant.rating}</span></p>
+                                        <p className = "data-selected__p">Ranking: <span className = "data-selected__span">{restaurant.ranking}</span></p>                                                                   
+                                        <p className = "data-selected__p">Category: <span className = "data-selected__span">{restaurant.ranking_category}</span></p>
+                                        <p className = "data-selected__p">Ranking position: <span className = "data-selected__span">{restaurant.ranking_position}</span></p>                                           
+                                        <p className = "data-selected__p">Price: <span className = "data-selected__span">{restaurant.price}</span></p>    
 
                                     </div>
                                 </div>                               

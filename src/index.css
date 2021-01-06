@@ -397,46 +397,44 @@ margin: 40px;
     text-align: center;
     padding: 10px;
 }
-.data-selected h2{
+.data-selected__h2{
     padding: 10px;
     color: rgb(23, 88, 88);
 }
 .data-selected div{
     padding: 10px;
 }
-.data-info{
+.data-selected__data-info{
     display: flex;
     justify-content: space-around;  
 }
-.data-info p,
-.provider-heading p{
-    font-weight: bold;
-}
-.data-info div p{
+.data-selected__p{
     padding: 2px;
     font-size: medium;
+    font-weight: bold;
 }
-
-.data-info p span,
-.provider-heading p span{
+.data-selected__span{
     color: rgb(23, 88, 88);
     font-weight: bold;
 }
-.data-left{
+.data-selected_left{
     width: 350px;
 }
-.data-right{
+.data-selected_right{
     width: 550px;
     text-align: left;
 }
-.data-restaurant{
+.data-selected__data-restaurant{
     text-align: left;
     width: 32%;
 }
-.data-first,
-.data-second,
-.data-third {
-    width: 350px;
+
+.provider-heading p{
+    font-weight: bold;
+}
+.provider-heading p span{
+    color: rgb(23, 88, 88);
+    font-weight: bold;
 }
 textarea{
     width: 100%;
@@ -681,13 +679,13 @@ footer {
                 padding: 5px;
                 margin: 5px;
             }
-            .data-info div p{
+            .data-selected__p{
                 font-size: small;
             }
             .data-selected div{
                 padding: 10px 5px;
             }
-            .data-restaurant{
+            .data-selected__data-restaurant{
                 width: 100%;
             }
             p{
@@ -731,17 +729,14 @@ footer {
 }
             /*PAGES*/
             /*DATA*/
-            .data-info{
+            .data-selected__data-info{
                 flex-direction: column;
             }
-            .data-info div{
+            .data-selected_left,.data-selected_right{
                 max-width: 100%;
                 padding: 10px;
             }
-            .data-restaurant{
-                width: 100%;
-            }
-            .data-info div p {
+            .data-selected__p {
                 font-size: small;
             }
             

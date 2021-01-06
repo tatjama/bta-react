@@ -6,9 +6,10 @@ const Range = ({handleChange, errors}) => {
     const getRange = () => {
         for(let i = 5; i >=1 ; i--){
             rangeArray.push(
-                <div className = "range">
+                <div key={i} className = "range">
                         <label>{i} star</label> 
                         <input 
+                            key = {i}
                             type="radio" 
                             name="rating" 
                             value= {i}                                                
