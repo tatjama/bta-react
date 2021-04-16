@@ -1,12 +1,8 @@
 {
     "countriesArray":[
-        {"name": "Afghanistan",
+ {"name": "Afghanistan",
 "id": "AF",
-"value": "0"
-
-},{"name": "Aland Islands",
-"id": "AX",
-"value": "1"
+"value": "0" 
 
 },{"name": "Albania",
 "id": "AL",
@@ -16,29 +12,9 @@
 "id": "DZ",
 "value": "3"
 
-},{"name": "American Samoa",
-"id": "AS",
-"value": "4"
-
-},{"name": "Andorra",
-"id": "AD",
-"value": "5"
-
 },{"name": "Angola",
 "id": "AO",
 "value": "6"
-
-},{"name": "Anguilla",
-"id": "AI",
-"value": "7"
-
-},{"name": "Antarctica",
-"id": "AQ",
-"value": "8"
-
-},{"name": "Antigua And Barbuda",
-"id": "AG",
-"value": "9"
 
 },{"name": "Argentina",
 "id": "AR",
@@ -47,10 +23,6 @@
 },{"name": "Armenia",
 "id": "AM",
 "value": "11"
-
-},{"name": "Aruba",
-"id": "AW",
-"value": "12"
 
 },{"name": "Australia",
 "id": "AU",
@@ -76,10 +48,6 @@
 "id": "BD",
 "value": "18"
 
-},{"name": "Barbados",
-"id": "BB",
-"value": "19"
-
 },{"name": "Belarus",
 "id": "BY",
 "value": "20"
@@ -88,29 +56,13 @@
 "id": "BE",
 "value": "21"
 
-},{"name": "Belize",
-"id": "BZ",
-"value": "22"
-
 },{"name": "Benin",
 "id": "BJ",
 "value": "23"
 
-},{"name": "Bermuda",
-"id": "BM",
-"value": "24"
-
-},{"name": "Bhutan",
-"id": "BT",
-"value": "25"
-
 },{"name": "Bolivia",
 "id": "BO",
 "value": "26"
-
-},{"name": "Bonaire, Saint Eustatius And Saba",
-"id": "BQ",
-"value": "27"
 
 },{"name": "Bosnia And Herzegovina",
 "id": "BA",
@@ -120,25 +72,9 @@
 "id": "BW",
 "value": "29"
 
-},{"name": "Bouvet Island",
-"id": "BV",
-"value": "30"
-
 },{"name": "Brazil",
 "id": "BR",
 "value": "31"
-
-},{"name": "British Indian Ocean Territory",
-"id": "IO",
-"value": "32"
-
-},{"name": "British Virgin Islands",
-"id": "VG",
-"value": "33"
-
-},{"name": "Brunei",
-"id": "BN",
-"value": "34"
 
 },{"name": "Bulgaria",
 "id": "BG",
