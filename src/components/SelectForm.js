@@ -26,7 +26,10 @@ const SelectForm = () =>{
                    name = "countries"
                 />
                         <br/>
-                {isError && <div className = "error">Error. Something went wrong...</div>}
+                {isError && <div className = "error">Error. Something went wrong...
+                {country.name} doesn't have a city over 100,000 citizens.
+                    <br/> Please select another country
+                </div>}
                 {isLoading?
                     <div className = "loader"><Loader type="Grid" color="#bae7e7" height={40} width={40} /></div>
                 :                

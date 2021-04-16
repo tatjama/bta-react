@@ -20,6 +20,7 @@ const useSelect = (callback) =>{
           
  const handleSelectCountry = (e) =>{        
       setCountry(countries[e.target.value]);
+      console.log(country)
       
  }
  useEffect(() => {  
